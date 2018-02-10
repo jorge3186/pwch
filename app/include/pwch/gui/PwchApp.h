@@ -1,12 +1,4 @@
-#include "wx/wxprec.h"
-
-#ifdef __BORLANDC__
-#pragma hdrstop
-#endif
-
-#ifndef WX_PRECOMP
-#include "wx/wx.h"
-#endif
+#include <pwch\gui\wxHeaders.h>
 
 class PwchApp : public wxApp {
 public:

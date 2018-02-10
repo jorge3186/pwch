@@ -11,7 +11,7 @@ file(GLOB PWCH_HEADERS
     ${PWCH_API_HEADERS}
     ${PWCH_GUI_HEADERS}
 )
-include_directories(${PWCH_HEADERS})
+include_directories("${PROJECT_SOURCE_DIR}/app/include")
 
 #**********************************************************
 # pwch Source Files
@@ -27,24 +27,25 @@ file(GLOB PWCH_SRC
     ${PWCH_GUI_SRC}
 )
 
-# If using Visual Studio:
-# We set source groups for the Header/Source files
-# so they are included properly with correct paths.
-if(MSVC)
-    source_group("Header Files\\pwch" FILES ${PWCH_ROOT_HEADERS})
-    source_group("Header Files\\pwch\\api" FILES ${PWCH_API_HEADERS})
-    source_group("Header Files\\pwch\\gui" FILES ${PWCH_GUI_HEADERS})
+# Source Group the Files to fix paths
+# in IDEs
+source_group("Header Files\\pwch" FILES ${PWCH_ROOT_HEADERS})
+source_group("Header Files\\pwch\\api" FILES ${PWCH_API_HEADERS})
+source_group("Header Files\\pwch\\gui" FILES ${PWCH_GUI_HEADERS})
 
-    source_group("Source Files\\pwch" FILES ${PWCH_ROOT_SRC})
-    source_group("Source Files\\pwch\\api" FILES ${PWCH_API_SRC})
-    source_group("Source Files\\pwch\\gui" FILES ${PWCH_GUI_SRC})
-endif(MSVC)
+source_group("Source Files\\pwch" FILES ${PWCH_ROOT_SRC})
+source_group("Source Files\\pwch\\api" FILES ${PWCH_API_SRC})
+source_group("Source Files\\pwch\\gui" FILES ${PWCH_GUI_SRC})
 
 # create exec file with project sources
-add_executable(pwch ${PWCH_SRC})
+add_executable(pwch ${PWCH_SRC} ${PWCH_HEADERS})
 
 # Link All dependent libraries
 target_link_libraries(pwch ${wxWidgets_LIBRARIES})
+
+# If on windows, we need to let
+# windows know to build windows application
+# and not a console app (default)
 if(WIN32)
 	if(MSVC)
 		set_target_properties(pwch PROPERTIES LINK_FLAGS_RELEASE "/SUBSYSTEM:WINDOWS")
