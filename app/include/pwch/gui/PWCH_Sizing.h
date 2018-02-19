@@ -1,4 +1,4 @@
-#include <pwch\gui\wxHeaders.h>
+#include <pwch/gui/wxHeaders.h>
 
 #define PWCH_resolutionX wxSystemSettings::GetMetric(wxSYS_SCREEN_X)
 #define PWCH_resolutionY wxSystemSettings::GetMetric(wxSYS_SCREEN_Y)

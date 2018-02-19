@@ -1,3 +1,3 @@
-#include <pwch\gui\PwchApp.h>
+#include <pwch/gui/PwchApp.h>
 
 IMPLEMENT_APP(PwchApp)

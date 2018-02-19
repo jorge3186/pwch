@@ -1,9 +1,9 @@
-#include <pwch\gui\LoginForm.h>
-#include <pwch\gui\PWCH_IDS.h>
-#include <pwch\gui\PWCH_Sizing.h>
-#include <pwch\gui\Utils.h>
-#include <pwch\gui\PWCH_Colors.h>
-#include <pwch\gui\CheckForm.h>
+#include <pwch/gui/LoginForm.h>
+#include <pwch/gui/PWCH_IDS.h>
+#include <pwch/gui/PWCH_Sizing.h>
+#include <pwch/gui/Utils.h>
+#include <pwch/gui/PWCH_Colors.h>
+#include <pwch/gui/CheckForm.h>
 
 LoginForm::LoginForm(wxWindow* parent, int ID) 
 	: wxPanel(parent, ID,

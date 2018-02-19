@@ -1,6 +1,6 @@
-#include <pwch\gui\PwchApp.h>
-#include <pwch\gui\MainFrame.h>
-#include <pwch\gui\PWCH_Sizing.h>
+#include <pwch/gui/PwchApp.h>
+#include <pwch/gui/MainFrame.h>
+#include <pwch/gui/PWCH_Sizing.h>
 
 bool PwchApp::OnInit() {
 

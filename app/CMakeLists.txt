@@ -12,6 +12,7 @@ file(GLOB PWCH_HEADERS
     ${PWCH_GUI_HEADERS}
 )
 include_directories("${PROJECT_SOURCE_DIR}/app/include")
+include_directories("${PROJECT_SOURCE_DIR}/app/include/pwch/gui")
 
 #**********************************************************
 # pwch Source Files

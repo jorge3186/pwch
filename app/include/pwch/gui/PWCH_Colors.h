@@ -1,4 +1,4 @@
-#include <pwch\gui\wxHeaders.h>
+#include <pwch/gui/wxHeaders.h>
 
 #define DARK_COLOR wxColour(50, 50, 50, 255)
 #define LIGHT_DARK wxColour(65, 65, 65, 255)

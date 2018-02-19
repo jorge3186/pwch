@@ -1,7 +1,7 @@
-#include <pwch\gui\CheckForm.h>
-#include <pwch\gui\PWCH_Sizing.h>
-#include <pwch\gui\Utils.h>
-#include <pwch\gui\PWCH_IDS.h>
+#include <pwch/gui/CheckForm.h>
+#include <pwch/gui/PWCH_Sizing.h>
+#include <pwch/gui/Utils.h>
+#include <pwch/gui/PWCH_IDS.h>
 
 CheckForm::CheckForm(wxWindow* parent, int ID)
 	: wxPanel(parent, ID,

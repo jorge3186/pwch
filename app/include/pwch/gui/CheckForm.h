@@ -1,5 +1,5 @@
-#include <pwch\gui\wxHeaders.h>
-#include <wx\notebook.h>
+#include <pwch/gui/wxHeaders.h>
+#include <wx/notebook.h>
 
 class CheckForm : public wxPanel {
 public:

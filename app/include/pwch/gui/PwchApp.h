@@ -1,4 +1,4 @@
-#include <pwch\gui\wxHeaders.h>
+#include <pwch/gui/wxHeaders.h>
 
 class PwchApp : public wxApp {
 public:

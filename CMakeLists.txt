@@ -19,7 +19,8 @@ project(pwch)
 #**************************************************
 set(WX_ROOT_DIR "${PROJECT_SOURCE_DIR}/dependencies/wxWidgets" CACHE STRING "Root Path to wxWidgets")
 set(wxWidgets_ROOT_DIR ${WX_ROOT_DIR})
-set(wxWidgets_LIB_DIR "${WX_ROOT_DIR}/lib/vc_lib" CACHE PATH "wxWidgets Library Directory")
+set(WX_LIB_DIR "lib/vc_lib" CACHE PATH "wxWidgets Library Directory (From root dir)")
+set(wxWidgets_LIB_DIR "${WX_ROOT_DIR}/${WX_LIB_DIR}")
 
 if (WIN32)
 	set(wxWidgets_CONFIGURATION "mswud" CACHE STRING "COnfiguration for wxWdigdets: msw, mswd, mswu, etc.")

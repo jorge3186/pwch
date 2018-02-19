@@ -1,8 +1,8 @@
-#include <pwch\gui\MainFrame.h>
-#include <pwch\gui\PWCH_Sizing.h>
-#include <pwch\gui\PWCH_IDS.h>
-#include <pwch\gui\LoginForm.h>
-#include <pwch\gui\PWCH_Colors.h>
+#include <pwch/gui/MainFrame.h>
+#include <pwch/gui/PWCH_Sizing.h>
+#include <pwch/gui/PWCH_IDS.h>
+#include <pwch/gui/LoginForm.h>
+#include <pwch/gui/PWCH_Colors.h>
 
 // constructor
 MainFrame::MainFrame(const wxString& title) 
